@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" onMouseClicked="#focus" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #B1C9ED;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.RegisterController">
+   <children>
+      <VBox layoutX="133.0" layoutY="122.0" prefHeight="315.0" prefWidth="434.0">
+         <children>
+            <BorderPane prefHeight="18.0" prefWidth="334.0" />
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="458.0" text="Get Started Now">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <Label text="Username">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <TextField fx:id="usernameField" prefHeight="27.0" prefWidth="339.0" promptText="Your username here" style="-fx-border-color: #808080;" />
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <Label text="Email Address">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <TextField fx:id="emailField" prefHeight="27.0" prefWidth="339.0" promptText="Your email address" style="-fx-border-color: #808080;" />
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <Label text="Password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+            <PasswordField fx:id="passwordField" prefHeight="27.0" prefWidth="339.0" promptText="Your password here" style="-fx-border-color: #808080;" />
+            <BorderPane prefHeight="10.0" prefWidth="334.0" />
+         </children>
+      </VBox>
+      <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="456.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="46.0" prefWidth="154.0" styleClass=".button" stylesheets="@../../../button.css" text="Create account" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="-156.0" layoutY="41.0" prefHeight="60.0" prefWidth="601.0" text="SIGN UP&gt;&gt;">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="406.0" layoutY="456.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="46.0" prefWidth="154.0" styleClass=".button" stylesheets="@../../../button.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

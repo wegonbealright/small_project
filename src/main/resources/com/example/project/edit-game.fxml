@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #B0B5E3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.EditGameController">
+   <children>
+      <Label fx:id="editGame2" alignment="CENTER" layoutX="-119.0" layoutY="34.0" prefHeight="45.0" prefWidth="600.0" text="EDIT THE GAME&gt;&gt;">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="70.0" layoutY="502.0" mnemonicParsing="false" onAction="#confirm2" prefHeight="46.0" prefWidth="125.0" styleClass=".button" stylesheets="@../../../button.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <VBox layoutX="65.0" layoutY="129.0" prefHeight="354.0" prefWidth="571.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="77.0" text="Title">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="13.0" prefWidth="571.0" />
+            <BorderPane prefHeight="13.0" prefWidth="571.0">
+               <left>
+                  <TextField fx:id="gameName2" prefHeight="32.0" prefWidth="410.0" promptText="Game Name..." style="-fx-border-color: #808080; -fx-border-width: 1;" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="12.0" prefWidth="571.0" />
+            <Label text="Description">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Tell the world why they should play this game" textFill="#6b6464">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="13.0" prefWidth="571.0" />
+            <TextField fx:id="gameDescription2" prefHeight="141.0" prefWidth="557.0" promptText="Game Description..." style="-fx-border-color: #808080; -fx-border-width: 1;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <BorderPane prefHeight="13.0" prefWidth="571.0" />
+            <Label prefHeight="34.0" prefWidth="99.0" text="Category">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <BorderPane prefHeight="13.0" prefWidth="571.0" />
+            <BorderPane prefHeight="13.0" prefWidth="571.0">
+               <left>
+                  <TextField fx:id="gameCategory2" prefHeight="32.0" prefWidth="410.0" promptText="Game Category..." style="-fx-border-color: #808080; -fx-border-width: 1;" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </left>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #B0B5E3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.AccountChangeController">
+   <children>
+      <BorderPane layoutX="-84.0" layoutY="57.0" prefHeight="28.0" prefWidth="600.0">
+         <center>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="600.0" text="CHANGE ACCOUNT&gt;&gt;" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </center></BorderPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="197.0" prefHeight="255.0" prefWidth="460.0">
+         <content>
+            <VBox fx:id="accountVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="256.0" prefWidth="457.0" />
+         </content></ScrollPane>
+      <Button fx:id="loginButton" layoutX="504.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="48.0" prefWidth="136.0" styleClass=".button" stylesheets="@../../../button.css" text="Register" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton1" layoutX="504.0" layoutY="359.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="48.0" prefWidth="136.0" styleClass=".button" stylesheets="@../../../button.css" text="Game menu" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
